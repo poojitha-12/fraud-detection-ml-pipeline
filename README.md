@@ -148,3 +148,49 @@ python src/prepare_features.py
 
 Train baseline fraud classification models and evaluate
 precision, recall, F1-score, and false positives.
+
+
+## Day 4: Logistic Regression Model Training
+
+Trained the first baseline machine learning model
+for fraud classification using Logistic Regression.
+
+### Model Training
+
+- Loaded the Day 3 processed datasets
+- Used 800 training transactions
+- Used 200 testing transactions
+- Trained Logistic Regression with scikit-learn
+- Generated predictions and fraud probability scores
+
+### Model Evaluation
+
+Evaluated the model using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrix
+
+Actual evaluation results are saved in
+`results/model_metrics.csv`.
+
+### Confusion Matrix
+
+![Confusion Matrix](results/confusion_matrix.png)
+
+### Saved Model
+
+`models/logistic_regression.joblib`
+
+### Run Day 4
+
+```bash
+python src/train_model.py
+```
+
+### Next Steps
+
+Improve fraud detection performance by comparing
+different models and exploring decision thresholds.

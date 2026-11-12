@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1_score,true_negatives,false_positives,false_negatives,true_positives
+Logistic Regression,0.96,0.6666666666666666,0.2222222222222222,0.3333333333333333,190,1,7,2
