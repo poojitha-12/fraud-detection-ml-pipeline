@@ -113,3 +113,38 @@ should not be interpreted as real-world fraud trends.
 ```bash
 python src/exploratory_analysis.py
 ```
+
+## Day 3: Feature Engineering and Data Preparation
+
+Prepared the synthetic transaction dataset for machine learning.
+
+### Feature Engineering
+
+- Created an `is_night` feature
+- Applied log transformation to transaction amounts
+- Selected five model input features
+- Excluded transaction IDs from model training
+
+### Data Preparation
+
+- Used an 80/20 stratified train-test split
+- Created 800 training and 200 testing samples
+- Standardized numerical features using StandardScaler
+- Fitted the scaler only on training data to prevent leakage
+
+### Outputs
+
+- `data/processed/train.csv`
+- `data/processed/test.csv`
+- `models/scaler.joblib`
+
+### Run
+
+```bash
+python src/prepare_features.py
+```
+
+### Next Steps
+
+Train baseline fraud classification models and evaluate
+precision, recall, F1-score, and false positives.
